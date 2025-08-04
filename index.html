@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Estanislau Mateus | Desenvolvedor Front-End Profissional</title>
+
+    <meta name="description"
+        content="Portfólio de Estanislau Mateus, Desenvolvedor Front-End especializado em interfaces modernas, responsivas e acessíveis.">
+    <meta name="keywords"
+        content="Desenvolvedor Front-End, Estanislau Mateus, Estanislau Bartolomeu Mateus, HTML, CSS, JavaScript, React, Web Design, Programador Web">
+    <meta name="author" content="Estanislau Mateus">
+
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="https://cdn.tailwindcss.com" defer></script>
+    <script src="./js/main.js" defer></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8Q5VTK5HJS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-8Q5VTK5HJS');
+    </script>
+</head>
+
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+    <!-- Navigation -->
+    <nav
+        class="fixed w-full top-0 z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-md shadow-lg border-b border-gray-200 dark:border-gray-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-2xl font-bold text-primary-600 dark:text-primary-400">
+                    Estanislau Mateus
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home"
+                        class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Início</a>
+                    <a href="#about"
+                        class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Sobre</a>
+                    <a href="#experience"
+                        class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Experiência</a>
+                    <a href="#skills"
+                        class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Habilidades</a>
+                    <a href="#portfolio"
+                        class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Portfólio</a>
+                    <a href="#contact"
+                        class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Contato</a>
+                    <button onclick="toggleTheme()"
+                        class="p-2 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors w-10 h-10 flex items-center justify-center">
+                        <i class="fas fa-moon dark:hidden text-gray-600"></i>
+                        <i class="fas fa-sun hidden dark:block text-yellow-400"></i>
+                    </button>
+
+                </div>
+                <div class="md:hidden flex items-center space-x-2">
+                    <button onclick="toggleTheme()" class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800">
+                        <i class="fas fa-moon dark:hidden text-gray-600"></i>
+                        <i class="fas fa-sun hidden dark:block text-yellow-400"></i>
+                    </button>
+                    <button onclick="toggleMenu()" class="text-gray-700 dark:text-gray-300">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700">
+            <div class="px-4 py-2 space-y-2">
+                <a href="#home"
+                    class="block py-2 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400">Início</a>
+                <a href="#about"
+                    class="block py-2 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400">Sobre</a>
+                <a href="#experience"
+                    class="block py-2 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400">Experiência</a>
+                <a href="#skills"
+                    class="block py-2 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400">Habilidades</a>
+                <a href="#portfolio"
+                    class="block py-2 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400">Portfólio</a>
+                <a href="#contact"
+                    class="block py-2 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400">Contato</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home"
+        class="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-blue-50 dark:from-gray-900 dark:to-gray-800 pt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="animate-float mb-8">
+                <div
+                    class="w-48 h-48 mx-auto mb-8 bg-gradient-to-br from-primary-500 to-primary-700 rounded-full flex items-center justify-center shadow-2xl">
+                    <i class="fas fa-code text-6xl text-white"></i>
+                </div>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">
+                Olá, eu sou <span class="text-primary-600 dark:text-primary-400">Estanislau Mateus</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-8 max-w-3xl mx-auto">
+                Desenvolvedor Front-End especializado em criar experiências digitais modernas e interfaces que convertem
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+                <a href="https://wa.me/244951059457" target="_blank"
+                    class="bg-secondary-600 hover:bg-secondary-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all transform hover:scale-105 shadow-lg flex items-center gap-2">
+                    <i class="fab fa-whatsapp text-xl"></i>
+                    Vamos Conversar!
+                </a>
+                <a href="#portfolio"
+                    class="border-2 border-primary-600 text-primary-600 dark:text-primary-400 dark:border-primary-400 hover:bg-primary-600 hover:text-white dark:hover:bg-primary-400 dark:hover:text-gray-900 px-8 py-4 rounded-lg font-semibold text-lg transition-all transform hover:scale-105">
+                    Ver Meu Trabalho
+                </a>
+                <button onclick="downloadCV()"
+                    class="bg-gray-800 dark:bg-gray-700 hover:bg-gray-900 dark:hover:bg-gray-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all transform hover:scale-105 shadow-lg flex items-center gap-2">
+                    <i class="fas fa-download"></i>
+                    Download CV
+                </button>
+            </div>
+            <!-- Stats -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-2xl mx-auto">
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-primary-600 dark:text-primary-400" id="projects-counter">0</div>
+                    <div class="text-sm text-gray-600 dark:text-gray-400">Projetos</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-primary-600 dark:text-primary-400" id="clients-counter">0</div>
+                    <div class="text-sm text-gray-600 dark:text-gray-400">Clientes</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-primary-600 dark:text-primary-400" id="experience-counter">0
+                    </div>
+                    <div class="text-sm text-gray-600 dark:text-gray-400">Anos</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-primary-600 dark:text-primary-400">100%</div>
+                    <div class="text-sm text-gray-600 dark:text-gray-400">Satisfação</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white dark:bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">Sobre Mim</h2>
+                <p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+                    Conheça mais sobre minha jornada e paixão pelo desenvolvimento web
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h3 class="text-3xl font-bold text-gray-800 dark:text-gray-200">Transformando Ideias em Realidade
+                        Digital</h3>
+                    <p class="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
+                        Sou um desenvolvedor front-end apaixonado por criar interfaces modernas e funcionais.
+                        Com mais de 2 anos de experiência, especializo-me em React.js, JavaScript e TailwindCSS,
+                        sempre focando na melhor experiência do usuário.
+                    </p>
+                    <p class="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
+                        Minha abordagem combina design elegante com código limpo e performance otimizada,
+                        garantindo que cada projeto não apenas pareça incrível, mas também funcione perfeitamente
+                        em todos os dispositivos.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-primary-50 dark:bg-primary-900/20 p-4 rounded-lg">
+                            <i class="fas fa-code text-primary-600 dark:text-primary-400 text-2xl mb-2"></i>
+                            <h4 class="font-semibold text-gray-800 dark:text-gray-200">Código Limpo</h4>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">Estrutura organizada e manutenível</p>
+                        </div>
+                        <div class="bg-secondary-50 dark:bg-secondary-900/20 p-4 rounded-lg">
+                            <i class="fas fa-mobile-alt text-secondary-600 dark:text-secondary-400 text-2xl mb-2"></i>
+                            <h4 class="font-semibold text-gray-800 dark:text-gray-600">Responsivo</h4>
+                            <p class="text-sm text-gray-600 dark:text-gray-500">Perfeito em todos os dispositivos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="bg-gradient-to-br from-primary-500 to-primary-700 p-8 rounded-2xl shadow-2xl">
+                        <div class="grid grid-cols-2 gap-6 text-white text-center">
+                            <div>
+                                <div class="text-3xl font-bold">10+</div>
+                                <div class="text-sm opacity-90">Projetos</div>
+                            </div>
+                            <div>
+                                <div class="text-3xl font-bold">20+</div>
+                                <div class="text-sm opacity-90">Clientes</div>
+                            </div>
+                            <div>
+                                <div class="text-3xl font-bold">24/7</div>
+                                <div class="text-sm opacity-90">Suporte</div>
+                            </div>
+                            <div>
+                                <div class="text-3xl font-bold">2+</div>
+                                <div class="text-sm opacity-90">Anos</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-gray-50 dark:bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">Experiência</h2>
+                <p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+                    Minha jornada profissional e principais conquistas
+                </p>
+            </div>
+            <div class="max-w-4xl mx-auto">
+                <!-- Timeline -->
+                <div class="relative">
+                    <div
+                        class="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-primary-200 dark:bg-primary-800">
+                    </div>
+
+                    <!-- Experience Item 1 -->
+                    <div class="relative flex items-center justify-between mb-12">
+
+                        <div class="w-5/12 text-right pr-8">
+                            <div
+                                class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700">
+                                <h3 class="text-xl font-bold text-gray-800 dark:text-gray-200">Desenvolvedor Front-End
+                                    Freelancer</h3>
+                                <p class="text-primary-600 dark:text-primary-400 font-semibold">2022 - Presente</p>
+                                <p class="text-gray-600 dark:text-gray-400 mt-2">
+                                    Desenvolvimento de sites e aplicações web para diversos clientes,
+                                    focando em React.js, TailwindCSS e experiência do usuário.
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary-600 rounded-full border-4 border-white dark:border-gray-900">
+                        </div>
+                        <div class="w-5/12"></div>
+                    </div>
+
+                    <!-- Experience Item 2 -->
+                    <div class="relative flex items-center justify-between mb-12">
+                        <div class="w-5/12"></div>
+                        <div
+                            class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-secondary-600 rounded-full border-4 border-white dark:border-gray-900">
+                        </div>
+                        <div class="w-5/12 pl-8">
+                            <div
+                                class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700">
+                                <h3 class="text-xl font-bold text-gray-800 dark:text-gray-200">Estudante de Programação
+                                </h3>
+                                <p class="text-secondary-600 dark:text-secondary-400 font-semibold">2021 - 2022</p>
+                                <p class="text-gray-600 dark:text-gray-400 mt-2">
+                                    Aprendizado intensivo em tecnologias web modernas,
+                                    incluindo HTML, CSS, JavaScript, React e banco de dados.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience Item 3 -->
+                    <div class="relative flex items-center justify-between">
+                        <div class="w-5/12 text-right pr-8">
+                            <div
+                                class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700">
+                                <h3 class="text-xl font-bold text-gray-800 dark:text-gray-200">Primeiro Contato com
+                                    Programação</h3>
+                                <p class="text-accent-600 dark:text-accent-400 font-semibold">2020</p>
+                                <p class="text-gray-600 dark:text-gray-400 mt-2">
+                                    Descoberta da paixão pela programação e início dos estudos
+                                    em desenvolvimento web e lógica de programação.
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-accent-600 rounded-full border-4 border-white dark:border-gray-900">
+                        </div>
+                        <div class="w-5/12"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-white dark:bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">Habilidades Técnicas</h2>
+                <p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+                    Tecnologias e ferramentas que domino para criar soluções excepcionais
+                </p>
+            </div>
+
+            <!-- Technical Skills -->
+            <div class="grid md:grid-cols-2 gap-12 mb-16">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-200 mb-8">Frontend</h3>
+                    <div class="space-y-6">
+                        <div class="skill-item">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-lg font-semibold text-gray-700 dark:text-gray-300">HTML5</span>
+                                <span class="text-primary-600 dark:text-primary-400 font-semibold">95%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3">
+                                <div class="skill-bar bg-gradient-to-r from-orange-400 to-orange-600 h-3 rounded-full"
+                                    style="width: 0%" data-width="95%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-lg font-semibold text-gray-700 dark:text-gray-300">CSS3 &
+                                    TailwindCSS</span>
+                                <span class="text-primary-600 dark:text-primary-400 font-semibold">90%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3">
+                                <div class="skill-bar bg-gradient-to-r from-blue-400 to-blue-600 h-3 rounded-full"
+                                    style="width: 0%" data-width="90%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-lg font-semibold text-gray-700 dark:text-gray-300">JavaScript</span>
+                                <span class="text-primary-600 dark:text-primary-400 font-semibold">85%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3">
+                                <div class="skill-bar bg-gradient-to-r from-yellow-400 to-yellow-600 h-3 rounded-full"
+                                    style="width: 0%" data-width="85%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-lg font-semibold text-gray-700 dark:text-gray-300">React.js</span>
+                                <span class="text-primary-600 dark:text-primary-400 font-semibold">80%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3">
+                                <div class="skill-bar bg-gradient-to-r from-cyan-400 to-cyan-600 h-3 rounded-full"
+                                    style="width: 0%" data-width="80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-200 mb-8">Outras Tecnologias</h3>
+                    <div class="space-y-6">
+                        <div class="skill-item">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-lg font-semibold text-gray-700 dark:text-gray-300">Bootstrap</span>
+                                <span class="text-primary-600 dark:text-primary-400 font-semibold">85%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3">
+                                <div class="skill-bar bg-gradient-to-r from-purple-400 to-purple-600 h-3 rounded-full"
+                                    style="width: 0%" data-width="85%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-lg font-semibold text-gray-700 dark:text-gray-300">MySQL</span>
+                                <span class="text-primary-600 dark:text-primary-400 font-semibold">75%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3">
+                                <div class="skill-bar bg-gradient-to-r from-blue-500 to-blue-700 h-3 rounded-full"
+                                    style="width: 0%" data-width="75%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-lg font-semibold text-gray-700 dark:text-gray-300">Git & GitHub</span>
+                                <span class="text-primary-600 dark:text-primary-400 font-semibold">80%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3">
+                                <div class="skill-bar bg-gradient-to-r from-gray-600 to-gray-800 h-3 rounded-full"
+                                    style="width: 0%" data-width="80%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-lg font-semibold text-gray-700 dark:text-gray-300">UI/UX Design</span>
+                                <span class="text-primary-600 dark:text-primary-400 font-semibold">70%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3">
+                                <div class="skill-bar bg-gradient-to-r from-pink-400 to-pink-600 h-3 rounded-full"
+                                    style="width: 0%" data-width="70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Soft Skills -->
+            <div class="text-center mb-8">
+                <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-200">Competências Profissionais</h3>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="text-center p-6 bg-gray-50 dark:bg-gray-700 rounded-lg">
+                    <i class="fas fa-users text-3xl text-primary-600 dark:text-primary-400 mb-3"></i>
+                    <h4 class="font-semibold text-gray-800 dark:text-gray-200">Trabalho em Equipe</h4>
+                </div>
+                <div class="text-center p-6 bg-gray-50 dark:bg-gray-700 rounded-lg">
+                    <i class="fas fa-comments text-3xl text-secondary-600 dark:text-secondary-400 mb-3"></i>
+                    <h4 class="font-semibold text-gray-800 dark:text-gray-200">Comunicação</h4>
+                </div>
+                <div class="text-center p-6 bg-gray-50 dark:bg-gray-700 rounded-lg">
+                    <i class="fas fa-lightbulb text-3xl text-accent-600 dark:text-accent-400 mb-3"></i>
+                    <h4 class="font-semibold text-gray-800 dark:text-gray-200">Criatividade</h4>
+                </div>
+                <div class="text-center p-6 bg-gray-50 dark:bg-gray-700 rounded-lg">
+                    <i class="fas fa-clock text-3xl text-primary-600 dark:text-primary-400 mb-3"></i>
+                    <h4 class="font-semibold text-gray-800 dark:text-gray-200">Pontualidade</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-gray-50 dark:bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">Meu Portfólio</h2>
+                <p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+                    Projetos desenvolvidos com paixão e dedicação
+                </p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button onclick="filterProjects('all')"
+                    class="filter-btn active bg-primary-600 text-white px-6 py-2 rounded-full font-semibold transition-all">
+                    Todos
+                </button>
+                <button onclick="filterProjects('web')"
+                    class="filter-btn bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-6 py-2 rounded-full font-semibold transition-all">
+                    Web Apps
+                </button>
+                <button onclick="filterProjects('ecommerce')"
+                    class="filter-btn bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-6 py-2 rounded-full font-semibold transition-all">
+                    E-commerce
+                </button>
+                <button onclick="filterProjects('landing')"
+                    class="filter-btn bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-6 py-2 rounded-full font-semibold transition-all">
+                    Landing Pages
+                </button>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="portfolio-grid">
+                <!-- Project 1 -->
+                <div
+                    class="project-item ecommerce bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all transform hover:scale-105 border border-gray-200 dark:border-gray-700">
+                    <div
+                        class="h-48 bg-gradient-to-br from-primary-500 to-primary-700 flex items-center justify-center relative overflow-hidden">
+                        <i class="fas fa-shopping-cart text-6xl text-white"></i>
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-20 transition-all flex items-center justify-center opacity-0 hover:opacity-100">
+                            <div class="flex space-x-4">
+
+                                <a href="https://estanislaumateus.github.io/ecommerce/" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <button
+                                        class="bg-white text-gray-800 p-2 rounded-full hover:bg-gray-100 transition-colors">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </button>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 dark:text-gray-200 mb-2">E-commerce Moderno</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4">Plataforma completa de vendas online com
+                            carrinho, pagamentos e painel administrativo.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 px-3 py-1 rounded-full text-sm font-medium">React</span>
+                            <span
+                                class="bg-secondary-100 dark:bg-secondary-900/30 text-secondary-700 dark:text-secondary-300 px-3 py-1 rounded-full text-sm font-medium">TailwindCSS</span>
+                            <span
+                                class="bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-300 px-3 py-1 rounded-full text-sm font-medium">MySQL</span>
+                        </div>
+                        <div class="flex space-x-2">
+                            <a href="https://estanislaumateus.github.io/ecommerce/" target="_blank"
+                                class="flex-1 bg-primary-600 hover:bg-primary-700 text-center text-white py-2 px-4 rounded-lg transition-colors font-medium">
+                                Ver Demo
+
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div
+                    class="project-item landing bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all transform hover:scale-105 border border-gray-200 dark:border-gray-700">
+                    <div
+                        class="h-48 bg-gradient-to-br from-secondary-500 to-secondary-700 flex items-center justify-center relative overflow-hidden">
+                        <i class="fas fa-mobile-alt text-6xl text-white"></i>
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-20 transition-all flex items-center justify-center opacity-0 hover:opacity-100">
+                            <div class="flex space-x-4">
+                                <a href="https://estanislaumateus.github.io/Portfolio/" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <button
+                                        class="bg-white text-gray-800 p-2 rounded-full hover:bg-gray-100 transition-colors">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </button>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 dark:text-gray-200 mb-2">Landing Page Responsiva</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4">Landing page moderna com foco em conversão e
+                            experiência mobile-first.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 px-3 py-1 rounded-full text-sm font-medium">HTML5</span>
+                            <span
+                                class="bg-secondary-100 dark:bg-secondary-900/30 text-secondary-700 dark:text-secondary-300 px-3 py-1 rounded-full text-sm font-medium">CSS3</span>
+                            <span
+                                class="bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-300 px-3 py-1 rounded-full text-sm font-medium">JavaScript</span>
+                        </div>
+                        <div class="flex space-x-2">
+                            <a href="https://estanislaumateus.github.io/Portfolio/" target="_blank"
+                                class=" text-center flex-1 bg-secondary-600 hover:bg-secondary-700 text-white py-2 px-4 rounded-lg transition-colors font-medium">
+                                Ver Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div
+                    class="project-item web bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all transform hover:scale-105 border border-gray-200 dark:border-gray-700">
+                    <div
+                        class="h-48 bg-gradient-to-br from-purple-500 to-purple-700 flex items-center justify-center relative overflow-hidden">
+                        <i class="fas fa-chart-line text-6xl text-white"></i>
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-20 transition-all flex items-center justify-center opacity-0 hover:opacity-100">
+                            <div class="flex space-x-4">
+
+                                <a href="https://estanislaumateus.github.io/ecommerce/admin-dashboard" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <button
+                                        class="bg-white text-gray-800 p-2 rounded-full hover:bg-gray-100 transition-colors">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </button>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 dark:text-gray-200 mb-2">Dashboard Analytics</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4">Painel administrativo com gráficos interativos
+                            e visualização de dados em tempo real.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 px-3 py-1 rounded-full text-sm font-medium">React</span>
+                            <span
+                                class="bg-secondary-100 dark:bg-secondary-900/30 text-secondary-700 dark:text-secondary-300 px-3 py-1 rounded-full text-sm font-medium">Chart.js</span>
+                            <span
+                                class="bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-300 px-3 py-1 rounded-full text-sm font-medium">MySQL</span>
+                        </div>
+                        <div class="flex space-x-2">
+                            <a href="https://estanislaumateus.github.io/ecommerce/admin-dashboard" target="_blank"
+                                class="text-center flex-1 bg-purple-600 hover:bg-purple-700 text-white py-2 px-4 rounded-lg transition-colors font-medium">
+                                Ver Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div
+                    class="project-item web  bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all transform hover:scale-105 border border-gray-200 dark:border-gray-700">
+                    <div
+                        class="h-48 bg-gradient-to-br from-green-500 to-green-700 flex items-center justify-center relative overflow-hidden">
+                        <i class="fas fa-store text-6xl text-white"></i>
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-20 transition-all flex items-center justify-center opacity-0 hover:opacity-100">
+                            <div class="flex space-x-4">
+
+                                <a href="https://estanislaumateus.github.io/GuilNes-Corporation/" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <button
+                                        class="bg-white text-gray-800 p-2 rounded-full hover:bg-gray-100 transition-colors"
+                                        aria-label="Abrir site GuilNes Corporation">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </button>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 dark:text-gray-200 mb-2">Site Institucional</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4">Sistema completo de uma empresa, destacando
+                            suas parcerias e serviços.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 px-3 py-1 rounded-full text-sm font-medium">React</span>
+                            <span
+                                class="bg-secondary-100 dark:bg-secondary-900/30 text-secondary-700 dark:text-secondary-300 px-3 py-1 rounded-full text-sm font-medium">Bootstrap</span>
+                            <span
+                                class="bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-300 px-3 py-1 rounded-full text-sm font-medium">PHP</span>
+                        </div>
+                        <div class="flex space-x-2">
+                            <a href="https://estanislaumateus.github.io/GuilNes-Corporation/" target="_blank"
+                                class="text-center flex-1 bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-lg transition-colors font-medium">
+                                Ver Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div
+                    class="project-item web bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all transform hover:scale-105 border border-gray-200 dark:border-gray-700">
+                    <div
+                        class="h-48 bg-gradient-to-br from-pink-500 to-pink-700 flex items-center justify-center relative overflow-hidden">
+                        <i class="fas fa-palette text-6xl text-white"></i>
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-20 transition-all flex items-center justify-center opacity-0 hover:opacity-100">
+                            <div class="flex space-x-4">
+
+                                <a href="https://estanislaumateus.github.io/GuilNes-Hotel/" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <button
+                                        class="bg-white text-gray-800 p-2 rounded-full hover:bg-gray-100 transition-colors"
+                                        aria-label="Abrir site GuilNes Hotel">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </button>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 dark:text-gray-200 mb-2">Web Site Hoteleiro</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4">Site hotel para designer com galeria interativa
+                            e animações personalizadas.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 px-3 py-1 rounded-full text-sm font-medium">HTML5</span>
+                            <span
+                                class="bg-secondary-100 dark:bg-secondary-900/30 text-secondary-700 dark:text-secondary-300 px-3 py-1 rounded-full text-sm font-medium">SCSS</span>
+                            <span
+                                class="bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-300 px-3 py-1 rounded-full text-sm font-medium">GSAP</span>
+                        </div>
+                        <div class="flex space-x-2">
+                            <a href="https://estanislaumateus.github.io/GuilNes-Hotel/" target="_blank"
+                                class="text-center flex-1 bg-pink-600 hover:bg-pink-700 text-white py-2 px-4 rounded-lg transition-colors font-medium">
+                                Ver Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div
+                    class="project-item web ecommerce bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all transform hover:scale-105 border border-gray-200 dark:border-gray-700">
+                    <div
+                        class="h-48 bg-gradient-to-br from-indigo-500 to-indigo-700 flex items-center justify-center relative overflow-hidden">
+                        <i class="fas fa-tasks text-6xl text-white"></i>
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-20 transition-all flex items-center justify-center opacity-0 hover:opacity-100">
+                            <div class="flex space-x-4">
+
+                                <a href="https://estanislaumateus.github.io/Ecommerce-Carros/" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <button
+                                        class="bg-white text-gray-800 p-2 rounded-full hover:bg-gray-100 transition-colors"
+                                        aria-label="Abrir site Ecommerce de Carros">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </button>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 dark:text-gray-200 mb-2">E-commerce de Vendas de
+                            carro</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4">ecommerce de compras de peças de carro com
+                            assistência de IA em tempo real.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 px-3 py-1 rounded-full text-sm font-medium">React</span>
+                            <span
+                                class="bg-secondary-100 dark:bg-secondary-900/30 text-secondary-700 dark:text-secondary-300 px-3 py-1 rounded-full text-sm font-medium">TailwindCSS</span>
+                            <span
+                                class="bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-300 px-3 py-1 rounded-full text-sm font-medium">Firebase</span>
+                        </div>
+                        <div class="flex space-x-2">
+                            <a href="https://estanislaumateus.github.io/Ecommerce-Carros/" target="_blank"
+                                class="text-center flex-1 bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-4 rounded-lg transition-colors font-medium">
+                                Ver Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-white dark:bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">O Que Dizem Sobre Mim</h2>
+                <p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+                    Feedback de clientes satisfeitos com meu trabalho
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded-xl border border-gray-200 dark:border-gray-600">
+                    <div class="flex items-center mb-4">
+                        <div
+                            class="w-12 h-12 bg-primary-600 rounded-full flex items-center justify-center text-white font-bold">
+                            F
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-semibold text-gray-800 dark:text-gray-200">Fernandes Ramiro</h4>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">CEO, ACK Kyame</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-400">
+                        Estanislau entregou um site excepcional para nossa empresa.
+                        Profissional, pontual e com atenção aos detalhes. Recomendo!
+                    </p>
+                    <div class="flex mt-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded-xl border border-gray-200 dark:border-gray-600">
+                    <div class="flex items-center mb-4">
+                        <div
+                            class="w-12 h-12 bg-secondary-600 rounded-full flex items-center justify-center text-white font-bold">
+                            M
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-semibold text-gray-800 dark:text-gray-200">Manuel Lamborne</h4>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">Diretor, Seja Pegasos</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-400">
+                        O e-commerce que ele desenvolveu superou nossas expectativas.
+                        Interface moderna e funcionalidades perfeitas!
+                    </p>
+                    <div class="flex mt-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded-xl border border-gray-200 dark:border-gray-600">
+                    <div class="flex items-center mb-4">
+                        <div
+                            class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold">
+                            A
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-semibold text-gray-800 dark:text-gray-200">Ana Costa</h4>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">Empreendedora</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-400">
+                        Trabalhar com Estanislau foi uma experiência incrível.
+                        Ele transformou nosso design em um site perfeito!
+                    </p>
+                    <div class="flex mt-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-20 bg-gray-50 dark:bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">Meus Serviços</h2>
+                <p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+                    Soluções completas para suas necessidades digitais
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div
+                    class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:scale-105 text-center border border-gray-200 dark:border-gray-700">
+                    <div
+                        class="w-20 h-20 mx-auto mb-6 bg-primary-100 dark:bg-primary-900/30 rounded-full flex items-center justify-center">
+                        <i class="fas fa-code text-3xl text-primary-600 dark:text-primary-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-200 mb-4">Desenvolvimento Web</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-6">Criação de sites e aplicações web modernas,
+                        responsivas e otimizadas.</p>
+                    <ul class="text-left space-y-2 mb-6">
+                        <li class="flex items-center"><i
+                                class="fas fa-check text-primary-600 dark:text-primary-400 mr-2"></i>Sites Responsivos
+                        </li>
+                        <li class="flex items-center"><i
+                                class="fas fa-check text-primary-600 dark:text-primary-400 mr-2"></i>Single Page
+                            Applications</li>
+                        <li class="flex items-center"><i
+                                class="fas fa-check text-primary-600 dark:text-primary-400 mr-2"></i>Performance
+                            Otimizada</li>
+                    </ul>
+                    <div class="text-2xl font-bold text-primary-600 dark:text-primary-400 mb-4">A partir de 90.000 Kz
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div
+                    class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:scale-105 text-center border border-gray-200 dark:border-gray-700">
+                    <div
+                        class="w-20 h-20 mx-auto mb-6 bg-secondary-100 dark:bg-secondary-900/30 rounded-full flex items-center justify-center">
+                        <i class="fas fa-shopping-cart text-3xl text-secondary-600 dark:text-secondary-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-200 mb-4">E-commerce</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-6">Lojas virtuais completas com sistema de pagamento e
+                        gestão.</p>
+                    <ul class="text-left space-y-2 mb-6">
+                        <li class="flex items-center"><i
+                                class="fas fa-check text-secondary-600 dark:text-secondary-400 mr-2"></i>Carrinho de
+                            Compras</li>
+                        <li class="flex items-center"><i
+                                class="fas fa-check text-secondary-600 dark:text-secondary-400 mr-2"></i>Painel
+                            Administrativo</li>
+                        <li class="flex items-center"><i
+                                class="fas fa-check text-secondary-600 dark:text-secondary-400 mr-2"></i>Integração de
+                            Pagamentos</li>
+                    </ul>
+                    <div class="text-2xl font-bold text-secondary-600 dark:text-secondary-400 mb-4">A partir de 120.000
+                        Kz</div>
+                </div>
+
+                <!-- Service 3 -->
+                <div
+                    class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:scale-105 text-center border border-gray-200 dark:border-gray-700">
+                    <div
+                        class="w-20 h-20 mx-auto mb-6 bg-accent-100 dark:bg-accent-900/30 rounded-full flex items-center justify-center">
+                        <i class="fas fa-palette text-3xl text-accent-600 dark:text-accent-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-200 mb-4">UI/UX Design</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-6">Design de interfaces intuitivas e experiências de
+                        usuário excepcionais.</p>
+                    <ul class="text-left space-y-2 mb-6">
+                        <li class="flex items-center"><i
+                                class="fas fa-check text-accent-600 dark:text-accent-400 mr-2"></i>Prototipagem</li>
+                        <li class="flex items-center"><i
+                                class="fas fa-check text-accent-600 dark:text-accent-400 mr-2"></i>Design System</li>
+                        <li class="flex items-center"><i
+                                class="fas fa-check text-accent-600 dark:text-accent-400 mr-2"></i>Testes de Usabilidade
+                        </li>
+                    </ul>
+                    <div class="text-2xl font-bold text-accent-600 dark:text-accent-400 mb-4">A partir de 90.000 Kz
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white dark:bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">Vamos Trabalhar Juntos!
+                </h2>
+                <p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+                    Pronto para transformar suas ideias em realidade? Entre em contato comigo!
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Contact Info -->
+                <div class="space-y-8">
+                    <h3 class="text-3xl font-bold text-gray-800 dark:text-gray-200 mb-6">Entre em Contato</h3>
+
+                    <!-- WhatsApp -->
+                    <div
+                        class="flex items-center space-x-4 p-4 bg-green-50 dark:bg-green-900/20 rounded-lg hover:bg-green-100 dark:hover:bg-green-900/30 transition-colors border border-green-200 dark:border-green-800">
+                        <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
+                            <i class="fab fa-whatsapp text-xl text-white"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 dark:text-gray-200">WhatsApp</h4>
+                            <a href="https://wa.me/244951059457" target="_blank"
+                                class="text-green-600 dark:text-green-400 hover:text-green-700 dark:hover:text-green-300">+244
+                                951 059 457</a>
+                        </div>
+                    </div>
+
+                    <!-- Instagram -->
+                    <div
+                        class="flex items-center space-x-4 p-4 bg-pink-50 dark:bg-pink-900/20 rounded-lg hover:bg-pink-100 dark:hover:bg-pink-900/30 transition-colors border border-pink-200 dark:border-pink-800">
+                        <div class="w-12 h-12 bg-pink-500 rounded-full flex items-center justify-center">
+                            <i class="fab fa-instagram text-xl text-white"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 dark:text-gray-200">Instagram</h4>
+                            <a href="https://instagram.com/_estanislau_mateus" target="_blank"
+                                class="text-pink-600 dark:text-pink-400 hover:text-pink-700 dark:hover:text-pink-300">@_estanislau_mateus</a>
+                        </div>
+                    </div>
+
+                    <!-- LinkedIn -->
+                    <div
+                        class="flex items-center space-x-4 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg hover:bg-blue-100 dark:hover:bg-blue-900/30 transition-colors border border-blue-200 dark:border-blue-800">
+                        <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
+                            <i class="fab fa-linkedin text-xl text-white"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 dark:text-gray-200">LinkedIn</h4>
+                            <a href="https://linkedin.com/in/estanislau-bartolomeu-mateus" target="_blank"
+                                class="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300">Estanislau
+                                Bartolomeu Mateus</a>
+                        </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div
+                        class="flex items-center space-x-4 p-4 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors border border-gray-200 dark:border-gray-600">
+                        <div class="w-12 h-12 bg-gray-600 rounded-full flex items-center justify-center">
+                            <i class="fas fa-envelope text-xl text-white"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 dark:text-gray-200">Email</h4>
+                            <a href="mailto:estanislau.mateus@email.com"
+                                class="text-gray-600 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300">estanislaubartolomeu@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <!-- CTA Button -->
+                    <div class="pt-6">
+                        <a href="https://wa.me/244951059457?text=Olá%20Estanislau!%20Gostaria%20de%20conversar%20sobre%20um%20projeto."
+                            target="_blank"
+                            class="inline-flex items-center gap-3 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all transform hover:scale-105 shadow-lg">
+                            <i class="fab fa-whatsapp text-xl"></i>
+                            Iniciar Conversa no WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-gray-50 dark:bg-gray-700 p-8 rounded-xl border border-gray-200 dark:border-gray-600">
+                    <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-200 mb-6">Envie uma Mensagem</h3>
+                    <form class="space-y-6" onsubmit="sendWhatsAppMessage(event)">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Nome</label>
+                            <input type="text" id="name" required
+                                class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Email</label>
+                            <input type="email" id="email" required
+                                class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100">
+                        </div>
+                        <div class="relative">
+                            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Tipo de
+                                Projeto</label>
+                            <select id="project"
+                                class="appearance-none w-full px-4 py-3 pr-12 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100">
+                                <option>Site Institucional</option>
+                                <option>E-commerce</option>
+                                <option>Landing Page</option>
+                                <option>Aplicação Web</option>
+                                <option>UI/UX Design</option>
+                                <option>Outro</option>
+                            </select>
+
+                            <!-- seta menor e um pouco mais abaixo -->
+                            <div class="pointer-events-none absolute right-6 flex items-start text-gray-500"
+                                style="top: 70%; transform: translateY(-50%);">
+                                <i class="fas fa-chevron-down text-xs"></i>
+                            </div>
+                        </div>
+
+                        <div class="relative mt-6">
+                            <label
+                                class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Orçamento</label>
+                            <select id="budget"
+                                class="appearance-none w-full px-4 py-3 pr-12 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100">
+                                <option>A partir de 90.000 Kz</option>
+                                <option>90.000 - 100.000 Kz</option>
+                                <option>100.000 - 200.000 Kz</option>
+                                <option>Acima de 200.000 Kz</option>
+                                <option>Prefiro discutir</option>
+                            </select>
+
+                            <!-- seta menor e um pouco mais abaixo -->
+                            <div class="pointer-events-none absolute right-6 flex items-start text-gray-500"
+                                style="top: 70%; transform: translateY(-50%);">
+                                <i class="fas fa-chevron-down text-xs"></i>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label
+                                class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Mensagem</label>
+                            <textarea id="message" rows="4" required
+                                class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="w-full bg-primary-600 hover:bg-primary-700 text-white py-3 rounded-lg font-semibold transition-colors flex items-center justify-center gap-2">
+                            <i class="fab fa-whatsapp"></i>
+                            Enviar via WhatsApp
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 dark:bg-black text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <h3 class="text-2xl font-bold text-primary-400 mb-4">Estanislau Mateus</h3>
+                    <p class="text-gray-400 mb-4 max-w-md">Desenvolvedor Front-End especializado em criar experiências
+                        digitais modernas e interfaces que convertem visitantes em clientes.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://wa.me/244951059457" target="_blank"
+                            class="text-gray-400 hover:text-green-400 transition-colors">
+                            <i class="fab fa-whatsapp text-xl"></i>
+                        </a>
+                        <a href="https://instagram.com/_estanislau_mateus" target="_blank"
+                            class="text-gray-400 hover:text-pink-400 transition-colors">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/estanislau-bartolomeu-mateus" target="_blank"
+                            class="text-gray-400 hover:text-blue-400 transition-colors">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="https://github.com/estanislau-mateus" target="_blank"
+                            class="text-gray-400 hover:text-gray-300 transition-colors">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Serviços</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#services" class="hover:text-white transition-colors">Desenvolvimento Web</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">E-commerce</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">UI/UX Design</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Landing Pages</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Tecnologias</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>React.js</li>
+                        <li>JavaScript</li>
+                        <li>TailwindCSS</li>
+                        <li>HTML5 & CSS3</li>
+                        <li>MySQL</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-center md:text-left">
+                    &copy; <span id="current-year"></span> Estanislau Mateus. Todos os direitos reservados.
+                </p>
+
+
+                <!--
+                <div class="flex items-center space-x-4 mt-4 md:mt-0">
+                    <span class="text-gray-400 text-sm">Visitantes: </span>
+                    <span class="text-primary-400 font-semibold" id="visitor-count">1,247</span>
+                </div>
+                -->
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/244951059457" target="_blank"
+        class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 w-12 h-12 flex items-center justify-center rounded-full shadow-lg hover:shadow-xl transition-all transform hover:scale-110 z-50 animate-pulse">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button onclick="scrollToTop()" id="backToTop"
+        class="fixed bottom-6 left-6 bg-primary-600 hover:bg-primary-700 text-white w-10 h-10 flex items-center justify-center rounded-full shadow-lg hover:shadow-xl transition-all transform hover:scale-110 z-50 opacity-0 invisible">
+        <i class="fas fa-arrow-up text-xl"></i>
+    </button>
+
+
+    <script src="./js/aparencia.js"></script>
+
+    <script>
+        // Insere o ano atual no elemento com id="current-year"
+        document.addEventListener("DOMContentLoaded", () => {
+            const yearSpan = document.getElementById("current-year");
+            if (yearSpan) {
+                yearSpan.textContent = new Date().getFullYear();
+            }
+        });
+    </script>
+
+</body>
+
+</html>
