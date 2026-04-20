@@ -124,7 +124,7 @@ Mensagem: ${message}
 Gostaria de conversar sobre este projeto!`;
 
     const encodedMessage = encodeURIComponent(whatsappMessage);
-    const whatsappURL = `https://wa.me/244951059457?text=${encodedMessage}`;
+    const whatsappURL = `https://wa.me/244922600744?text=${encodedMessage}`;
 
     window.open(whatsappURL, '_blank');
 }
@@ -132,8 +132,8 @@ Gostaria de conversar sobre este projeto!`;
 // Download CV function
 function downloadCV() {
     const a = document.createElement('a');
-    a.href = 'assets/Estanislau_Mateus.pdf'; // Caminho do arquivo .cv
-    a.download = 'Estanislau_Mateus.pdf';    // Nome do arquivo ao baixar
+    a.href = 'assets/estanislau_mateus_cv_260202_214951.pdf'; // Caminho do arquivo .cv
+    a.download = '';    // Nome do arquivo ao baixar
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
